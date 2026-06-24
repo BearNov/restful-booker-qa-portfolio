@@ -145,11 +145,112 @@ The checkout date should be later than the check-in date, and past dates should 
 
 **What the feature appears to do:**
 
+The booking process allows the user to select reservation dates, review the price calculation, enter guest information, and submit a room reservation.
+
 **Inputs:**
+
+* Check-in date
+* Checkout date
+* First name
+* Last name
+* Email address
+* Phone number
+* **Reserve Now** button
 
 **Expected user outcome:**
 
+The application should validate the selected dates and guest information, clearly display the reservation details, prevent duplicate bookings, and show a confirmation after a successful reservation.
+
+**Observed behaviour:**
+
+* The **Single Room** was selected for **28/06/2026–30/06/2026**.
+* The price summary correctly displayed:
+
+  * Room cost: **£200**
+  * Cleaning fee: **£25**
+  * Service fee: **£15**
+  * Total: **£240**
+* Clicking **Reserve Now** replaced the booking-calendar section with a guest-information form.
+* The form contained fields for first name, last name, email, and phone number.
+* No visible required-field indicators were shown.
+* The selected dates were no longer visible after opening the guest-information form.
+* The price summary remained visible.
+
+**Empty submission:**
+
+Submitting the form with all fields empty was blocked.
+
+The following validation messages were displayed together in one combined area:
+
+* `must not be empty`
+* `size must be between 3 and 18`
+* `size must be between 3 and 30`
+* `must not be empty`
+* `Lastname should not be blank`
+* `size must be between 11 and 21`
+* `Firstname should not be blank`
+
+**Invalid submission:**
+
+The following values were tested:
+
+* First name: `A`
+* Last name: `B`
+* Email: `invalid-email`
+* Phone: `123`
+
+The reservation was not created.
+
+The following validation messages were displayed:
+
+* `size must be between 11 and 21`
+* `size must be between 3 and 18`
+* `size must be between 3 and 30`
+* `must be a well-formed email address`
+
+All validation messages appeared in one combined area rather than beside the corresponding fields.
+
+**Valid submission:**
+
+The following test data was accepted:
+
+* First name: `Test`
+* Last name: `User`
+* Email: `test.user@example.com`
+* Phone: `07123456789`
+
+The booking was successfully created.
+
+The confirmation displayed:
+
+* **Booking Confirmed**
+* `Your booking has been confirmed for the following dates: 2026-06-28 - 2026-06-30`
+* A **Return Home** button that returned the user to the homepage
+
+No booking reference or reservation number was displayed.
+
+**Duplicate-booking observation:**
+
+After a successful reservation, the same room and date range, **28/06/2026–30/06/2026**, remained selectable.
+
+Submitting the same guest information again produced another **Booking Confirmed** message.
+
+Because the application is a shared demonstration environment whose database may reset periodically, further API or administrative verification is required to confirm whether two overlapping booking records were created.
+
+**Question for later verification:**
+
+* Does the backend permit multiple active bookings for the same room and overlapping dates?
+
 **Questions or unclear behaviour:**
+
+* Should the selected dates remain visible while the user enters guest information?
+* Should required fields be marked clearly before submission?
+* Should validation messages identify the corresponding field more clearly?
+* Should validation messages appear beside the relevant inputs?
+* Should a booking reference be shown after a successful reservation?
+* Why can the same room be booked more than once for the same dates?
+* Should already-booked dates be disabled or marked as unavailable?
+
 
 ---
 
