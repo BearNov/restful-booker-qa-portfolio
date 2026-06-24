@@ -30,11 +30,38 @@ The testing will focus on:
 
 ## 4. In Scope
 
-To be completed.
+This manual web-testing phase covers the main customer-facing features of the Restful Booker Platform:
+
+* Homepage navigation and section links
+* Room listings and room-detail pages
+* Room information, images, amenities, prices, and guest capacity
+* Availability-search date selection and validation
+* Booking-date selection and price calculation
+* Guest-information form validation
+* Successful room reservation flow
+* Contact-form validation and successful submission
+* User-facing confirmation and error messages
+* Basic responsive behaviour at desktop, tablet, and mobile viewport sizes
+* Basic cross-browser verification in Firefox and Chrome
+* Recording reproducible defects with supporting evidence
 
 ## 5. Out of Scope
 
-To be completed.
+The following areas are excluded from this manual web-testing phase:
+
+* Administration-panel functionality
+* User authentication beyond basic login-page observation
+* API testing with Postman
+* Direct database testing and SQL validation
+* Automated testing
+* Performance and load testing
+* Penetration testing and advanced security assessment
+* Complete accessibility audit
+* Testing on every browser, operating system, and physical device
+* Email or external notification delivery
+* Verification of third-party map data accuracy
+
+API testing and SQL validation will be completed later as separate modules within the overall QA portfolio project.
 
 ## 6. Test Approach
 
