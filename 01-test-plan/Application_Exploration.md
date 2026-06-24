@@ -247,10 +247,7 @@ Because the application is a shared demonstration environment whose database may
 * Should required fields be marked clearly before submission?
 * Should validation messages identify the corresponding field more clearly?
 * Should validation messages appear beside the relevant inputs?
-* Should a booking reference be shown after a successful reservation?
-* Why can the same room be booked more than once for the same dates?
 * Should already-booked dates be disabled or marked as unavailable?
-
 
 ---
 
