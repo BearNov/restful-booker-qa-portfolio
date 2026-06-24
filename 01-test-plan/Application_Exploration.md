@@ -97,18 +97,47 @@ The user should see accurate information about the selected room, including its 
 * Are the displayed price calculations updated correctly for every selected date range?
 * Why do some room images or amenity icons appear to change after returning to the homepage?
 
-
 ---
 
 ### 3. Availability Search
 
 **What the feature appears to do:**
 
+The **Check Availability** section allows users to enter check-in and checkout dates before viewing the available rooms.
+
 **Inputs:**
+
+* Check-in date
+* Checkout date
+* **Check Availability** button
 
 **Expected user outcome:**
 
+The application should validate the selected date range and display rooms that are available for the requested stay.
+
+The checkout date should be later than the check-in date, and past dates should not be accepted for a new reservation.
+
+**Observed behaviour:**
+
+* The default check-in date was **24/06/2026**.
+* The default checkout date was **25/06/2026**.
+* Three room cards were already displayed before performing a search.
+* Clicking **Check Availability** scrolled the page to the **Our Rooms** section.
+* A valid future range from **25/06/2026 to 27/06/2026** was accepted, but the displayed rooms did not change.
+* A second valid future range from **01/07/2026 to 03/07/2026** produced the same result.
+* The same check-in and checkout date, **25/06/2026**, was accepted without validation.
+* A checkout date earlier than the check-in date, **25/06/2026 to 24/06/2026**, was accepted without validation.
+* A past date range, **22/06/2026 to 23/06/2026**, was accepted without validation.
+* No error messages or availability messages were displayed for any of the tested date ranges.
+* The same three room cards remained visible after each search.
+
 **Questions or unclear behaviour:**
+
+* Should the availability search filter the displayed rooms according to the selected dates?
+* Why are invalid date ranges accepted without validation?
+* Should same-day bookings be allowed?
+* Should past dates be disabled in the date picker?
+* Should the user receive a message confirming whether rooms are available?
 
 ---
 
