@@ -350,10 +350,64 @@ Refreshing the page restored a new blank contact form.
 
 **What was checked:**
 
-**Observed behaviour:**
+Responsive behaviour was tested in Firefox Responsive Design Mode on Windows 10 using the following simulated viewport sizes:
+
+* Mobile: **375 × 667**
+* Tablet: **768 × 1024**
+* Device pixel ratio: **1**
+* Browser zoom: **100%**
+
+The homepage and room-detail pages were reviewed at both viewport sizes.
+
+#### Mobile — 375 × 667
+
+**Homepage observations:**
+
+* The header changed to a hamburger navigation menu.
+* The hamburger menu opened and remained usable.
+* The hero section, availability form, room cards, contact form, and footer fitted the viewport correctly.
+* The room cards stacked vertically.
+* No horizontal scrolling was observed.
+* The location map displayed as a very short horizontal strip, leaving most of the map area hidden.
+
+**Room-detail page observations:**
+
+* The room title, accessibility label, maximum guest capacity, image, description, features, policies, and house rules fitted the viewport.
+* The calendar controls and date selection remained usable.
+* The price summary fitted within the screen width.
+* The guest-information form and reservation controls remained usable.
+* The similar-room recommendations displayed correctly.
+* No horizontal scrolling or overlapping content was observed.
+
+#### Tablet — 768 × 1024
+
+**Homepage observations:**
+
+* The header continued to use a hamburger menu.
+* Opening the menu expanded the header and moved the page content downward.
+* The menu opened and closed correctly, and all links remained usable.
+* The hero section, availability form, room cards, contact form, and footer fitted the viewport.
+* No horizontal scrolling was observed.
+* The location map remained compressed and did not display its full intended height.
+
+**Room-detail page observations:**
+
+* The room information, image, calendar, price summary, booking form, and reservation controls remained usable.
+* Similar-room cards displayed in two columns.
+* The spacing between the reservation section and the **Similar Rooms You Might Like** heading was very limited.
+* The cramped spacing was reproduced on more than one room-detail page.
+* No overlapping controls or horizontal scrolling were observed.
+
+**Other observation requiring later verification:**
+
+* The number and content of similar-room cards changed after refreshing the page.
+* A partially displayed third card disappeared after the refresh.
+* Further testing is needed to determine whether this is caused by changing application data, loading behaviour, or a display issue.
 
 **Questions or unclear behaviour:**
 
-## General Notes
+* Should the map maintain a larger visible height on mobile and tablet screens?
+* Should additional spacing appear between the reservation section and the similar-room recommendations?
+* Is the changing similar-room content expected in the shared demonstration environment?
 
 *
