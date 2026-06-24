@@ -255,11 +255,94 @@ Because the application is a shared demonstration environment whose database may
 
 **What the feature appears to do:**
 
+The **Send Us a Message** form allows users to submit a general enquiry to the bed-and-breakfast.
+
 **Inputs:**
+
+* Name
+* Email
+* Phone
+* Subject
+* Message
+* **Submit** button
+
+No placeholder text or visible required-field indicators were displayed.
 
 **Expected user outcome:**
 
+The application should validate the submitted information, explain invalid input clearly, and show confirmation after a valid message is submitted.
+
+**Empty submission:**
+
+Submitting the form with all fields empty was blocked.
+
+The following validation messages appeared together in one error area below the form:
+
+* `Phone may not be blank`
+* `Phone must be between 11 and 21 characters.`
+* `Email may not be blank`
+* `Message may not be blank`
+* `Message must be between 20 and 2000 characters.`
+* `Subject must be between 5 and 100 characters.`
+* `Name may not be blank`
+* `Subject may not be blank`
+
+The individual fields were not highlighted, and the error messages were not displayed beside their corresponding fields.
+
+**Invalid submission:**
+
+The following values were tested:
+
+* Name: `A`
+* Email: `invalid-email`
+* Phone: `123`
+* Subject: `Hi`
+* Message: `Too short`
+
+The form was not submitted.
+
+The following validation messages were displayed:
+
+* `Phone must be between 11 and 21 characters.`
+* `must be a well-formed email address`
+* `Subject must be between 5 and 100 characters.`
+* `Message must be between 20 and 2000 characters.`
+
+The phone, email, subject, and message values were rejected.
+
+No validation message was displayed for the one-character name.
+
+**Valid submission:**
+
+The following test data was accepted:
+
+* Name: `Test User`
+* Email: `test.user@example.com`
+* Phone: `07123456789`
+* Subject: `Room information request`
+* Message: `I would like more information about room availability and booking options.`
+
+The form was replaced by a confirmation panel containing:
+
+* `Thanks for getting in touch Test User!`
+* `We'll get back to you about`
+* `Room information request`
+* `as soon as possible.`
+
+No reference number was displayed.
+
+The confirmation showed the submitted name and subject, but did not display the email address, phone number, or full message.
+
+Refreshing the page restored a new blank contact form.
+
 **Questions or unclear behaviour:**
+
+* Should required fields be identified before submission?
+* Should validation messages appear beside their corresponding fields?
+* Should the email validation message identify the email field explicitly?
+* Is a one-character name intentionally accepted?
+* Should the confirmation include a message reference number?
+* Should the confirmation display more of the submitted information?
 
 ---
 
