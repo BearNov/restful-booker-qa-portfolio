@@ -410,4 +410,3 @@ The homepage and room-detail pages were reviewed at both viewport sizes.
 * Should additional spacing appear between the reservation section and the similar-room recommendations?
 * Is the changing similar-room content expected in the shared demonstration environment?
 
-*
