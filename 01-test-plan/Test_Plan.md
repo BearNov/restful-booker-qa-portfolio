@@ -158,7 +158,26 @@ Testing may conclude with unresolved defects when they are clearly documented an
 
 ## 10. Risks and Assumptions
 
-To be completed.
+### Risks
+
+* The application is a public shared demonstration environment, so data may be changed by other users during testing.
+* Application data may be reset periodically, which could remove bookings, contact messages, or other test records.
+* Room information, images, prices, and availability may change between test executions.
+* Temporary network or service instability may affect results and could be mistaken for an application defect.
+* Formal business requirements are not available, so some expected results must be inferred from common booking-system behaviour and the user interface.
+* Testing is limited to selected browsers and simulated viewport sizes, so device-specific or browser-specific defects may remain undiscovered.
+* Direct database and administration access are not included in this testing phase, which limits verification of stored bookings and contact messages.
+* Third-party content, including map functionality, may behave differently from application-controlled features.
+
+### Assumptions
+
+* The public application represents the intended behaviour of the Restful Booker Platform.
+* Test bookings and contact messages may be created using clearly fictional information.
+* The application date and time are expected to match the current testing period unless otherwise observed.
+* A successful confirmation message indicates that the application accepted the submitted request, but backend storage may require later verification through API or administrative testing.
+* Tests will not use real personal, payment, or sensitive information.
+* The application will remain available long enough to complete the planned manual test execution.
+* Potential defects will be reproduced before being classified as confirmed issues.
 
 ## 11. Test Deliverables
 
