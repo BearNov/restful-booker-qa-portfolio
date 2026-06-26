@@ -128,7 +128,17 @@ The exact browser versions used during formal test execution will be recorded in
 
 ## 8. Entry Criteria
 
-To be completed.
+Formal test execution may begin when the following conditions are met:
+
+* The application is accessible through the public test URL.
+* The manual testing scope and test approach have been defined.
+* The required test environment and browsers are available.
+* The main customer-facing features are accessible for testing.
+* The test checklist and formal test cases have been prepared.
+* Required test data, including valid and invalid customer details, has been prepared.
+* The folders for test results, screenshots, and defect evidence are available in the project repository.
+* Known limitations of the shared demonstration environment have been documented.
+* No blocking environment issue prevents the main booking and contact workflows from being tested.
 
 ## 9. Exit Criteria
 
