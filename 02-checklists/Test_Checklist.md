@@ -95,7 +95,23 @@
 
 ## 5. Contact Form
 
-To be completed.
+| ID          | Test Scenario                                   | Expected Result                                                                  | Status  |
+| ----------- | ----------------------------------------------- | -------------------------------------------------------------------------------- | ------- |
+| CONTACT-001 | View the contact form on the homepage           | Name, email, phone, subject, message, and **Submit** controls are displayed      | Not Run |
+| CONTACT-002 | Review the form before entering information     | Required fields and input requirements are communicated clearly                  | Not Run |
+| CONTACT-003 | Submit the form with all fields empty           | Submission is blocked and clear validation is displayed for every required field | Not Run |
+| CONTACT-004 | Enter an incorrectly formatted email address    | The invalid email is rejected with a clear field-specific message                | Not Run |
+| CONTACT-005 | Enter a phone number shorter than 11 characters | The phone number is rejected and the permitted length is explained               | Not Run |
+| CONTACT-006 | Enter a phone number longer than 21 characters  | The phone number is rejected and the permitted length is explained               | Not Run |
+| CONTACT-007 | Enter a subject shorter than 5 characters       | The subject is rejected and the permitted length is explained                    | Not Run |
+| CONTACT-008 | Enter a subject longer than 100 characters      | The subject is rejected and the permitted length is explained                    | Not Run |
+| CONTACT-009 | Enter a message shorter than 20 characters      | The message is rejected and the permitted length is explained                    | Not Run |
+| CONTACT-010 | Enter a message longer than 2000 characters     | The message is rejected and the permitted length is explained                    | Not Run |
+| CONTACT-011 | Correct invalid values and resubmit             | Previous validation errors are removed after valid information is entered        | Not Run |
+| CONTACT-012 | Submit the form with valid information          | The message is accepted and a confirmation panel is displayed                    | Not Run |
+| CONTACT-013 | Review the successful-submission confirmation   | The confirmation displays the submitted name and subject correctly               | Not Run |
+| CONTACT-014 | Review the confirmation for a reference number  | A message reference or another way to identify the enquiry is displayed          | Not Run |
+| CONTACT-015 | Refresh the page after successful submission    | A new blank contact form is displayed without an error                           | Not Run |
 
 ## 6. Responsive Behaviour
 
