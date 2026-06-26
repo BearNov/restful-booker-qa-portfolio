@@ -96,7 +96,67 @@ Potential defects will be reproduced before being formally reported. Each confir
 
 ## 7. Test Environment and Tools
 
-To be completed.
+### Test Environment
+
+* **Operating system:** Windows 10
+* **Device type:** Desktop computer
+* **Primary browser:** Mozilla Firefox
+* **Secondary browser:** Google Chrome for selected cross-browser checks
+* **Application environment:** Public shared demonstration environment
+* **Application URL:** https://automationintesting.online/
+
+### Responsive Viewports
+
+Responsive testing will be performed using Firefox Responsive Design Mode at:
+
+* **Mobile:** 375 × 667
+* **Tablet:** 768 × 1024
+* **Device pixel ratio:** 1
+* **Browser zoom:** 100%
+* **Network throttling:** Disabled
+
+### Testing and Documentation Tools
+
+* **Firefox Developer Tools:** Responsive testing and technical investigation
+* **Chrome Developer Tools:** Selected cross-browser and technical checks
+* **GitHub:** Project documentation, version history, and defect tracking
+* **GitHub Issues:** Formal defect reports
+* **Microsoft Excel:** Test cases, execution results, and test-data management
+* **Screenshots:** Supporting evidence for observations and defects
+
+The exact browser versions used during formal test execution will be recorded in the test-execution results and defect reports.
+
+## 7. Test Environment and Tools
+
+### Test Environment
+
+* **Operating system:** Windows 10
+* **Device type:** Desktop computer
+* **Primary browser:** Mozilla Firefox
+* **Secondary browser:** Google Chrome for selected cross-browser checks
+* **Application environment:** Public shared demonstration environment
+* **Application URL:** https://automationintesting.online/
+
+### Responsive Viewports
+
+Responsive testing will be performed using Firefox Responsive Design Mode at:
+
+* **Mobile:** 375 × 667
+* **Tablet:** 768 × 1024
+* **Device pixel ratio:** 1
+* **Browser zoom:** 100%
+* **Network throttling:** Disabled
+
+### Testing and Documentation Tools
+
+* **Firefox Developer Tools:** Responsive testing and technical investigation
+* **Chrome Developer Tools:** Selected cross-browser and technical checks
+* **GitHub:** Project documentation, version history, and defect tracking
+* **GitHub Issues:** Formal defect reports
+* **Microsoft Excel:** Test cases, execution results, and test-data management
+* **Screenshots:** Supporting evidence for observations and defects
+
+The exact browser versions used during formal test execution will be recorded in the test-execution results and defect reports.
 
 ## 8. Entry Criteria
 
