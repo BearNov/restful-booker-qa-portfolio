@@ -65,7 +65,34 @@ API testing and SQL validation will be completed later as separate modules withi
 
 ## 6. Test Approach
 
-To be completed.
+Testing will be performed manually from the perspective of a customer using the public web application.
+
+The following testing methods will be used:
+
+* **Functional testing:** Verify that navigation, room browsing, availability search, booking, and contact features behave as expected.
+* **Exploratory testing:** Investigate the application to identify unclear behaviour, unexpected results, and potential defects outside predefined test cases.
+* **Positive testing:** Use valid dates and valid user information to confirm that successful workflows can be completed.
+* **Negative testing:** Use empty, invalid, and incorrectly formatted inputs to verify validation and error handling.
+* **Boundary-value testing:** Check values near documented limits, including minimum and maximum field lengths and date boundaries.
+* **Responsive testing:** Review the application at desktop, tablet, and mobile viewport sizes.
+* **Cross-browser testing:** Execute selected critical scenarios in Firefox and Chrome.
+* **Regression testing:** Re-run relevant test cases after reproducing or documenting defects to confirm that existing functions remain consistent.
+
+Formal test cases will be created for the main customer-facing workflows. Additional observations discovered during exploratory testing will be documented separately and converted into test cases or defect reports when appropriate.
+
+Each test case will include:
+
+* Test-case identifier
+* Feature or module
+* Preconditions
+* Test data
+* Execution steps
+* Expected result
+* Actual result
+* Status
+* Evidence or notes
+
+Potential defects will be reproduced before being formally reported. Each confirmed defect will include clear reproduction steps, expected and actual results, severity, priority, environment details, and supporting screenshots when available.
 
 ## 7. Test Environment and Tools
 
