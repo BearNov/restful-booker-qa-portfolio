@@ -181,4 +181,19 @@ Testing may conclude with unresolved defects when they are clearly documented an
 
 ## 11. Test Deliverables
 
-To be completed.
+The manual web-testing phase will produce the following deliverables:
+
+* **Application Exploration Document:** Initial observations, user flows, questions, and potential issues identified before formal testing.
+* **Software Test Plan:** Testing objectives, scope, approach, environment, criteria, risks, and deliverables.
+* **Test Checklist:** High-level scenarios covering the main customer-facing features.
+* **Detailed Test Cases:** Preconditions, test data, execution steps, expected results, actual results, status, and evidence.
+* **Test Execution Results:** A record of all executed test cases and their final statuses.
+* **Defect Reports:** Reproducible issues documented through GitHub Issues with severity, priority, environment details, and supporting evidence.
+* **Evidence Files:** Screenshots and other supporting materials linked to relevant test cases and defect reports.
+* **Cross-Browser Results:** Results from selected critical scenarios executed in Firefox and Chrome.
+* **Responsive-Test Results:** Findings from the defined mobile and tablet viewport sizes.
+* **Test Summary Report:** Final execution statistics, defect summary, unresolved risks, limitations, and overall assessment of the tested application.
+* **Updated Project README:** A recruiter-friendly overview containing project scope, tools, results, key defects, and links to all major deliverables.
+
+API testing with Postman and SQL data validation will be documented separately in later project modules.
+
