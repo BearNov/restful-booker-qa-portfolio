@@ -134,4 +134,17 @@
 
 ## 7. Cross-Browser Checks
 
-To be completed.
+Selected critical scenarios will be executed in both Mozilla Firefox and Google Chrome on Windows 10.
+
+| ID        | Test Scenario                                                               | Expected Result                                                                             | Status  |
+| --------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------- |
+| CROSS-001 | Open the homepage in Firefox and Chrome                                     | The homepage loads successfully in both browsers with the same main content                 | Not Run |
+| CROSS-002 | Open and use the navigation menu in Firefox and Chrome                      | The menu opens, closes, and navigates correctly in both browsers                            | Not Run |
+| CROSS-003 | Review room cards and open a room-detail page in Firefox and Chrome         | Room information, images, amenities, prices, and buttons display correctly in both browsers | Not Run |
+| CROSS-004 | Enter and submit a valid availability date range in Firefox and Chrome      | Both browsers process the selected dates consistently                                       | Not Run |
+| CROSS-005 | Select reservation dates and review the price summary in Firefox and Chrome | The same dates, fees, and total price are displayed in both browsers                        | Not Run |
+| CROSS-006 | Submit invalid guest information in Firefox and Chrome                      | Validation behaviour and messages are consistent in both browsers                           | Not Run |
+| CROSS-007 | Complete a valid booking in Firefox and Chrome                              | The booking workflow can be completed and confirmation is displayed in both browsers        | Not Run |
+| CROSS-008 | Submit invalid contact-form information in Firefox and Chrome               | The same invalid values are rejected consistently in both browsers                          | Not Run |
+| CROSS-009 | Submit valid contact-form information in Firefox and Chrome                 | A successful confirmation is displayed in both browsers                                     | Not Run |
+| CROSS-010 | Compare the page layout in Firefox and Chrome at the desktop viewport       | No browser-specific clipping, overlap, missing content, or horizontal scrolling is observed | Not Run |
