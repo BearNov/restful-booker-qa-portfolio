@@ -142,7 +142,19 @@ Formal test execution may begin when the following conditions are met:
 
 ## 9. Exit Criteria
 
-To be completed.
+Manual test execution may be completed when the following conditions are met:
+
+* All planned test cases have been executed at least once.
+* Each test case has an assigned status: **Pass**, **Fail**, **Blocked**, or **Not Run**.
+* All failed test cases have been reviewed and linked to a defect report when appropriate.
+* Critical customer workflows, including room browsing, availability search, booking, and contact submission, have been tested.
+* Selected critical scenarios have been checked in both Firefox and Chrome.
+* Responsive testing has been completed at the defined mobile and tablet viewport sizes.
+* Reproducible defects include sufficient steps, environment details, and supporting evidence.
+* Blocked or incomplete tests are documented with their reason.
+* A test summary report has been prepared with execution results, identified risks, and unresolved defects.
+
+Testing may conclude with unresolved defects when they are clearly documented and their impact is included in the final test summary.
 
 ## 10. Risks and Assumptions
 
