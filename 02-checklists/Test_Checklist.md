@@ -35,7 +35,23 @@
 
 ## 2. Room Listings and Room Details
 
-To be completed.
+| ID       | Test Scenario                                               | Expected Result                                                                                                              | Status  |
+| -------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------- |
+| ROOM-001 | View the **Our Rooms** section on the homepage              | Available room cards are displayed correctly                                                                                 | Not Run |
+| ROOM-002 | Review the information displayed on each room card          | Each card displays an image, room type, description, amenities, price per night, and **Book Now** button                     | Not Run |
+| ROOM-003 | Compare the displayed room cards                            | Each room displays information that corresponds to that specific room                                                        | Not Run |
+| ROOM-004 | Click **Book Now** on the Single Room card                  | The Single Room detail page opens                                                                                            | Not Run |
+| ROOM-005 | Click **Book Now** on the Double Room card                  | The Double Room detail page opens                                                                                            | Not Run |
+| ROOM-006 | Compare the room card information with its detail page      | The room title, price, capacity, and features match the selected room card                                                   | Not Run |
+| ROOM-007 | Review the room-detail page content                         | The page displays the room image, description, accessibility information, capacity, features, policies, and booking controls | Not Run |
+| ROOM-008 | Use the browser Back button from a room-detail page         | The user returns to the previous page without unexpected errors                                                              | Not Run |
+| ROOM-009 | Click **Home** in the room-detail breadcrumb                | The user returns to the homepage                                                                                             | Not Run |
+| ROOM-010 | Click **Rooms** in the room-detail breadcrumb               | The user returns to the **Our Rooms** section                                                                                | Not Run |
+| ROOM-011 | Use the **Today**, **Back**, and **Next** calendar controls | The calendar moves to the expected date or month                                                                             | Not Run |
+| ROOM-012 | Select reservation dates on the room-detail page            | The selected dates are shown and the price summary updates                                                                   | Not Run |
+| ROOM-013 | Review the **Similar Rooms You Might Like** section         | Similar-room cards display correctly with working **View Details** buttons                                                   | Not Run |
+| ROOM-014 | Click **View Details** on a similar-room card               | The corresponding room-detail page opens                                                                                     | Not Run |
+| ROOM-015 | Refresh a room-detail page                                  | The page reloads successfully without missing or corrupted room information                                                  | Not Run |
 
 ## 3. Availability Search
 
