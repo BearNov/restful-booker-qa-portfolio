@@ -72,7 +72,26 @@
 
 ## 4. Booking Flow
 
-To be completed.
+| ID       | Test Scenario                                                                  | Expected Result                                                                                 | Status  |
+| -------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- | ------- |
+| BOOK-001 | Select a valid future reservation date range                                   | The dates are selected successfully                                                             | Not Run |
+| BOOK-002 | Select a two-night stay in the Single Room                                     | The room cost is calculated as the nightly price multiplied by two nights                       | Not Run |
+| BOOK-003 | Review the complete price summary                                              | The room cost, cleaning fee, service fee, and total are displayed and calculated correctly      | Not Run |
+| BOOK-004 | Click **Reserve Now** after selecting valid dates                              | The guest-information form opens                                                                | Not Run |
+| BOOK-005 | Review the guest-information form                                              | First name, last name, email, and phone fields are displayed                                    | Not Run |
+| BOOK-006 | Review the selected dates after opening the guest-information form             | The selected reservation dates remain visible to the user                                       | Not Run |
+| BOOK-007 | Submit the guest-information form with all fields empty                        | Submission is blocked and clear validation is shown for every required field                    | Not Run |
+| BOOK-008 | Enter first and last names below the minimum permitted length                  | The invalid names are rejected with clear field-specific validation                             | Not Run |
+| BOOK-009 | Enter an incorrectly formatted email address                                   | The invalid email is rejected with a clear email validation message                             | Not Run |
+| BOOK-010 | Enter a phone number below the minimum permitted length                        | The invalid phone number is rejected with a clear phone validation message                      | Not Run |
+| BOOK-011 | Correct invalid guest information and resubmit                                 | Previous validation errors are removed when the values become valid                             | Not Run |
+| BOOK-012 | Submit valid guest information for an available room and date range            | The reservation is accepted and a confirmation is displayed                                     | Not Run |
+| BOOK-013 | Review the successful-booking confirmation                                     | The confirmation displays the booked dates and clearly states that the booking succeeded        | Not Run |
+| BOOK-014 | Review the confirmation for a booking reference                                | A unique booking reference or another way to identify the reservation is displayed              | Not Run |
+| BOOK-015 | Click **Return Home** after a successful reservation                           | The user returns to the homepage                                                                | Not Run |
+| BOOK-016 | Attempt to reserve the same room for the same dates after a successful booking | The application prevents an overlapping reservation or clearly explains the room is unavailable | Not Run |
+| BOOK-017 | Attempt to reserve a room using a checkout date earlier than the check-in date | The invalid reservation range is rejected                                                       | Not Run |
+| BOOK-018 | Attempt to reserve a room using past dates                                     | Past dates cannot be used to create a new reservation                                           | Not Run |
 
 ## 5. Contact Form
 
