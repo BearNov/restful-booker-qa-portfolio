@@ -115,7 +115,22 @@
 
 ## 6. Responsive Behaviour
 
-To be completed.
+| ID       | Test Scenario                                                         | Expected Result                                                                                           | Status  |
+| -------- | --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ------- |
+| RESP-001 | Open the homepage at a mobile viewport of **375 × 667**               | The homepage fits within the viewport without horizontal scrolling                                        | Not Run |
+| RESP-002 | Open and close the navigation menu at **375 × 667**                   | The menu opens and closes correctly, and all navigation links remain visible and usable                   | Not Run |
+| RESP-003 | Review the hero and availability sections at **375 × 667**            | Text, date fields, and buttons remain visible without clipping or overlap                                 | Not Run |
+| RESP-004 | Review room cards at **375 × 667**                                    | Room cards stack correctly and their images, text, amenities, prices, and buttons remain usable           | Not Run |
+| RESP-005 | Review the location map at **375 × 667**                              | The map displays at a usable height and is not excessively cropped or compressed                          | Not Run |
+| RESP-006 | Review the contact form and footer at **375 × 667**                   | All fields, buttons, text, and links fit within the viewport and remain usable                            | Not Run |
+| RESP-007 | Review a room-detail page at **375 × 667**                            | Room information, images, policies, calendar, price summary, and controls fit without clipping or overlap | Not Run |
+| RESP-008 | Open the guest-information form at **375 × 667**                      | All form fields, validation messages, and reservation controls remain visible and usable                  | Not Run |
+| RESP-009 | Open the homepage at a tablet viewport of **768 × 1024**              | The homepage fits within the viewport without horizontal scrolling                                        | Not Run |
+| RESP-010 | Open and close the navigation menu at **768 × 1024**                  | The menu remains usable and does not overlap or hide essential page content                               | Not Run |
+| RESP-011 | Review the location map at **768 × 1024**                             | The map displays at a usable height and is not excessively cropped or compressed                          | Not Run |
+| RESP-012 | Review a room-detail page at **768 × 1024**                           | Room information, calendar, price summary, and reservation controls display correctly                     | Not Run |
+| RESP-013 | Review the **Similar Rooms You Might Like** section at **768 × 1024** | The heading and room cards have sufficient spacing and do not overlap adjacent sections                   | Not Run |
+| RESP-014 | Refresh the room-detail page at **768 × 1024**                        | The responsive layout remains stable and no room-card content disappears because of the viewport          | Not Run |
 
 ## 7. Cross-Browser Checks
 
