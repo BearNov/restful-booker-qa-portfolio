@@ -55,7 +55,20 @@
 
 ## 3. Availability Search
 
-To be completed.
+| ID        | Test Scenario                                               | Expected Result                                                                               | Status  |
+| --------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------- | ------- |
+| AVAIL-001 | Open the homepage and review the default availability dates | The check-in date defaults to the current date and the checkout date defaults to a later date | Not Run |
+| AVAIL-002 | Search using a valid future check-in and checkout range     | The date range is accepted and rooms available for the selected dates are displayed           | Not Run |
+| AVAIL-003 | Compare results from two different valid future date ranges | The displayed availability reflects the date range used in each search                        | Not Run |
+| AVAIL-004 | Select the same date for check-in and checkout              | The application rejects a zero-night stay and provides clear validation                       | Not Run |
+| AVAIL-005 | Select a checkout date earlier than the check-in date       | The invalid date range is rejected and a clear validation message is displayed                | Not Run |
+| AVAIL-006 | Select a check-in date in the past                          | Past dates cannot be selected or submitted for a new reservation                              | Not Run |
+| AVAIL-007 | Select a valid check-in date and a past checkout date       | The invalid combination is rejected and a clear validation message is displayed               | Not Run |
+| AVAIL-008 | Click **Check Availability** with a valid date range        | The application processes the selected dates and moves the user to the availability results   | Not Run |
+| AVAIL-009 | Review the room cards after an availability search          | Only rooms available for the selected date range are shown                                    | Not Run |
+| AVAIL-010 | Review feedback after an availability search                | The application clearly indicates whether matching rooms are available                        | Not Run |
+| AVAIL-011 | Open a room from the availability results                   | The selected dates are preserved when the room-detail page opens                              | Not Run |
+| AVAIL-012 | Refresh the page after entering availability dates          | The application handles the entered dates consistently without corrupted or unexpected values | Not Run |
 
 ## 4. Booking Flow
 
